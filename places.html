@@ -22,8 +22,8 @@
   <body>
     <div class="container">
       <h1 class="page-header text-center">Places I've Been</h1>
-      <div class="col-md-6 col-md-offset-3">
-        <form id="places-input">
+      <div class="col-md-8 col-md-offset-2">
+        <form id="places-input" class="jumbotron">
           <div class="form-group">
             <label for="name" class="sr-only">Name:</label>
             <input type="text" name="name" id="name" class="form-control" placeholder="Name" required autofocus>
@@ -39,15 +39,32 @@
           <div class="form-group">
             <label for="datepicker" class="sr-only">Year:</label>
             <div class="input-group date">
-              <input type="text" class="form-control"  placeholder="Year"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+              <input id="year" type="text" class="form-control"  placeholder="Year"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
             </div>
           </div>
           <div class="form-group">
-            <label for="description" class="sr-only">Location Name:</label>
-            <textarea name="description" id="description" class="form-control" rows="6" placeholder="Location Name"></textarea>
+            <label for="description" class="sr-only">Description:</label>
+            <textarea name="description" id="description" class="form-control" rows="6" placeholder="Description"></textarea>
           </div>
           <button type="submit" class="btn btn-success">Add</button>
         </form>
+        <div class="col-md-6">
+          <div id="places">
+            <h3>Places You have been:</h3>
+            <ul class="results">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="place-info">
+            <h3></h3>
+            <p class="lead"><strong>Name: </strong><span class="name"></span></p>
+            <p class="lead"><strong>Location: </strong><span class="location"></span></p>
+            <p class="lead"><strong>When: </strong><span class="season"> </span>, <span class="year"> </span></p>
+            <p class="lead"><strong>Description: </strong><span class="description"> </span></p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

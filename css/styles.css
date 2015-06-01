@@ -1,4 +1,54 @@
-#jqtest {
-  background-color: black;
-  color: white;
+#places {
+  display: none;
+}
+
+.place:hover {
+  text-decoration: underline;
+}
+
+.place {
+  cursor: pointer;
+  color: #FEB15D;
+  font-size: 20px;
+}
+
+#place-info {
+  display: none;
+}
+
+body {
+  background-image: url("../img/tardis.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron, #places, #place-info {
+  opacity: 0.8;
+  background-color: #2980B9;
+}
+
+#places, #place-info {
+  padding: 0.5em 2em;
+  border-radius: 6px;
+}
+
+.name, .location, .season, .year, .description, .results {
+  color: #FEB15D;
+}
+/*.form-control {
+  opacity: 1;
+}*/
+
+.container {
+  /*background-color: rgba(70,137,102,0.6);*/
+  min-height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
