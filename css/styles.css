@@ -7,6 +7,12 @@
   display: none;
 }
 
+h3 {
+  color: #F49359;
+  font-size: 2.0em;
+  font-weight: bold;
+}
+
 .page-header {
   color: #FEB15D;
   font-size: 4em;
