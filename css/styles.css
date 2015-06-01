@@ -1,7 +1,16 @@
+* {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+
 #places {
   display: none;
 }
 
+.page-header {
+  color: #FEB15D;
+  font-size: 4em;
+}
 .place:hover {
   text-decoration: underline;
 }
@@ -9,7 +18,13 @@
 .place {
   cursor: pointer;
   color: #FEB15D;
-  font-size: 20px;
+  font-size: 30px;
+  vertical-align: top;
+
+}
+
+.results li {
+  list-style-image: url('../img/tardis-icon.png');
 }
 
 #place-info {
